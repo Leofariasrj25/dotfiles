@@ -1,0 +1,48 @@
+# Leo's alacritty configuration
+
+working_directory = "None"
+live_config_reload = true
+ipc_socket = true
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+dimensions = { columns = 0, lines = 0} 
+position = { x = 480, y = 200 }
+padding = { x = 0, y = 0 }
+dynamic_padding = false
+decorations = "Full" # it can be None, Transparent or Buttonless
+opacity = 1.0
+blur = false
+startup_mode = "Maximized"
+title = "Machine spirit terminal"
+dynamic_title = true
+class = { instance = "Alacritty", general = "Alacritty" }
+decorations_theme_variant = "Dark" 
+resize_increments = false
+option_as_alt = "None"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[terminal]
+osc52 = "OnlyCopy"
+
+[font]
+size = 9.5
+normal = { family = "DejaVuSans M Nerd Font", style ="Regular" }
+italic = { family = "DejaVuSans M Nerd Font", style="Italic" }
+bold = { family = "DejaVuSans M Nerd Font", style="Bold" }
+builtin_box_drawing = true
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 450 # miliseconds
+blink_timeout = 10 # seconds
+unfocused_hollow = true
+thickness = 0.15
+
+[mouse]
+hide_when_typing = false
