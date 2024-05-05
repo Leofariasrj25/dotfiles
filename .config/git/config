@@ -1,0 +1,14 @@
+[user]
+	name = Leonardo Farias dos Santos
+	email = leofariasrj25@gmail.com
+
+[color]
+	ui = auto
+
+[core]
+	editor = nvim
+	pager = cat
+	whitespace = -trailing-space
+
+[color "branch"]
+	upstream = cyan
