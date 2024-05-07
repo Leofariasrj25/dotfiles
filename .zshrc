@@ -54,7 +54,7 @@ alias lt='ls -l --sort time'
 alias gs='git status'
 alias gcm='git commit -m'
 alias gl='git log --pretty=oneline -n 10'
-alias go='git push origin'
+alias gpo='git push origin'
 
 # ------------------------------------------------------------------
 # Networking and IP 
