@@ -7,8 +7,22 @@
 
 [core]
 	editor = nvim
-	pager = cat
+	pager = delta # use n and N to move between different diff sections
 	whitespace = -trailing-space
 
 [color "branch"]
 	upstream = cyan
+
+[delta]
+	navigate = true
+	side-by-side = true
+	line-numbers = true
+
+[interactive]
+	diffFilter = delta --color-only
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
