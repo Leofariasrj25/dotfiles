@@ -65,7 +65,7 @@ alias ports='netstat -vatnp'
 # helper functions
 
 function jrun() {
-  javac $1 && java $1
+  javac $1 && java -ea $1
 }
 
 # compiler c with 42 appropriate flags
@@ -73,3 +73,7 @@ function jrun() {
 function c42() {
   cc -Wall -Werror -Wextra $@ && ./a.out
 }
+
+eval "$(atuin init zsh)"
+eval "$(/home/leofariasrj25/.local/bin/mise activate zsh)"
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
